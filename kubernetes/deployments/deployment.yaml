@@ -26,7 +26,7 @@ spec:
     spec:
       containers:
       - name: example-app
-        image: aimvector/python:1.0.2
+        image: aimvector/python:1.0.4
         imagePullPolicy: Always
         ports:
         - containerPort: 5000
@@ -46,7 +46,7 @@ spec:
       tolerations:
       - key: "cattle.io/os"
         value: "linux"
-        effect: "NoSchedule"      
+        effect: "NoSchedule"
 #NOTE: comment out `volumeMounts` section for configmap and\or secret guide
         # volumeMounts:
         # - name: secret-volume
